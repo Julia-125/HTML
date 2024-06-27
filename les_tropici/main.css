@@ -104,27 +104,19 @@ body {
 	cursor: pointer;
 	margin-top: calc(var(--index) * 2.5);
 }
+
+.button-start:hover, .btn__td:hover {
+	background: #2a7420;
+}
+
 .layer-4, .layer-5, .layer-6 {
 	pointer-events: none;
 } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.btn__td {
+	text-decoration: none;
+	color: #fff;
+}
 
 
 
@@ -151,49 +143,38 @@ body {
     font-size: 30px;
     font-weight: 700;
     color: #fff;
+	text-decoration: none;
+}
+
+/* Reviwes */
+.reviews {
+	margin: 25px;
+	padding: 10px 110px;
+	position: relative;
+  }
+
+.reviews__btn {
+  font-size: 0;
+  color: transparent;
+
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
 }
 
 
-/* Nav */
-
-.nav {
-    font-size: 14px;
-    text-transform: uppercase;
-}
-
-.nav__link {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 15px;
-    position: relative;
-
-    color: #fff;
-    text-decoration: none;
-
-    transition: color .2s linear;
-}
-
-.nav__link:after {
-    content: "";
+.reviews__btn:after {
+  content: "";
     display: block;
-    width: 100%;
-    height: 3px;
+    width: 16px;
+    height: 16px;
 
-    background-color: #8afc99;
-    opacity: 0;
-
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-
-    transition: opacity .2s linear;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
 }
 
-.nav__link:hover:after, .nav__link {
-    opacity: 1;
-}
-
-.nav__link:hover {
-    color: #8afc99;
+.reviews__btn--prev {
+  left: 0;
+  transform: rotate(-45deg);
 }
