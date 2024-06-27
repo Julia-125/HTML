@@ -213,6 +213,39 @@ hr {
     color: #4a4b94;
 }
 
+/* Reviwes */
+.reviews {
+	margin: 15px;
+	padding: 10px 110px;
+	position: relative;
+  }
+
+.reviews__btn {
+  font-size: 0;
+  color: transparent;
+
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+}
+
+
+.reviews__btn:after {
+  content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #4755a7;
+    border-left: 2px solid #4755a7;
+}
+
+.reviews__btn--prev {
+  left: 0;
+  transform: rotate(-45deg);
+}
+
 /* Nav */
 
 .nav {
@@ -269,7 +302,6 @@ hr {
     transition: color .2s linear;
     cursor: pointer;
 }
-
 
 /* Comand */
 .comand {
